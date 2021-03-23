@@ -1,0 +1,6 @@
+ion-input {
+    --border-color: #444;
+    border-color: #444;
+    --background-color: #444;
+    background-color: #444;
+}

@@ -17,7 +17,7 @@ interface Props {
 const MovieList: React.FC<Props> = ({ configuration, movies, setActiveMovie }) => {
   let history = useHistory();
   const images = configuration.images || {};
-  const base_url = images.base_url;
+  const base_url = images.secure_base_url;
   const poster_sizes = images.poster_sizes || ["w92"];
   const basePosterUrl = base_url === undefined ? undefined : `${base_url}${poster_sizes[0]}`;
 
